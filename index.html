@@ -47,6 +47,8 @@
 				line-height: 1.8rem;
 			}
 		</style>
+
+		<link rel="stylesheet" href="_media/styles.css">
 	</head>
 	<body>
 		<div id="app"></div>
@@ -69,5 +71,24 @@
 		</script>
 		<!-- Docsify v4 -->
 		<script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+
+		<script type="importmap">
+			{
+				"imports": {
+					"dawn-js-core": "https://ga.jspm.io/npm:dawn-js-core@0.1.1/index.js",
+					"dawn-js-ui": "https://ga.jspm.io/npm:dawn-js-ui@0.1.6/src/index.js"
+				},
+				"scopes": {
+					"https://ga.jspm.io/": {
+						"dawn-js-core": "https://ga.jspm.io/npm:dawn-js-core@0.1.1/index.js"
+					}
+				}
+			}
+			</script>
+			
+			<!-- ES Module Shims: Import maps polyfill for modules browsers without import maps support (all except Chrome 89+) -->
+			<script async src="https://ga.jspm.io/npm:es-module-shims@1.5.1/dist/es-module-shims.js" crossorigin="anonymous"></script>
+		
+			<script type="module" src="./docApp/main.js"></script>		
 	</body>
 </html>

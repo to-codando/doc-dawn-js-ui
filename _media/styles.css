@@ -1,0 +1,20 @@
+.widget {
+  border-radius: 5px;
+  background: #fff
+}
+
+.widget > h3 {
+  margin:0 0 1em 0;
+  padding: 1em;
+  border-bottom: 1px #ebebeb solid;
+  font-weight: 500;
+  font-size: .875em;
+  color: #666
+}
+
+.widget > .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 2em 2em 2em
+}
