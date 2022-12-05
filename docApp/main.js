@@ -1,5 +1,8 @@
-import { dawnJS } from 'dawn-js-core'
-import { appInput } from "dawn-js-ui"
+// import { appInput } from "dawn-js-ui"
+
+//pages
+
+import { avatarComponentPage } from './pages/avatar/index.js'
 
 window.onhashchange = () => {
   initRouter()
@@ -17,6 +20,9 @@ const initRouter = () => {
     case '#/tutorials/':
       loadPage(tutorialsPage)
       break;
+    case '#/documents/components/avatar/':
+      loadPage(avatarComponentPage)
+      break;
     default:
       console.log('nada a fazer')
   }
@@ -26,13 +32,13 @@ const initRouter = () => {
 const tutorialsPage = () => {
 
 
-  appInput.register('ds-name', document.body)
-  appInput.props.set({ label: 'Nome'})
-  appInput.init()
+  // appInput.register('ds-name', document.body)
+  // appInput.props.set({ label: 'Nome'})
+  // appInput.init()
 
-  appInput.state.on( payload => {
-    appInput.props.set({ label: payload.value })
-  })
+  // appInput.state.on( payload => {
+  //   appInput.props.set({ label: payload.value })
+  // })
 
 
 }

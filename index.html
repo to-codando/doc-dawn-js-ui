@@ -19,6 +19,8 @@
 			href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900&display=swap"
 			rel="stylesheet"
 		/>
+
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,100,1,200" />
 		<style>
 			:root {
 				--theme-color: hsl(40deg 90% 45%);
@@ -72,19 +74,23 @@
 		<!-- Docsify v4 -->
 		<script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
 
-		<script type="importmap">
-			{
-				"imports": {
-					"dawn-js-core": "https://ga.jspm.io/npm:dawn-js-core@0.1.1/index.js",
-					"dawn-js-ui": "https://ga.jspm.io/npm:dawn-js-ui@0.1.6/src/index.js"
-				},
-				"scopes": {
-					"https://ga.jspm.io/": {
-						"dawn-js-core": "https://ga.jspm.io/npm:dawn-js-core@0.1.1/index.js"
-					}
+  <!--
+    JSPM Generator Import Map
+    Edit URL: https://generator.jspm.io/#U2VhYGBkDM0rySzJSU1hSEksz9PNKtYtzXQw0DPUMzQGAMIrg8EgAA
+  -->
+  <script type="importmap">
+		{
+			"imports": {
+				"dawn-js-ui/src/components": "https://ga.jspm.io/npm:dawn-js-ui@0.1.13/index.js",
+				"dawn-js-ui": "https://jspm.dev/dawn-js-ui"
+			},
+			"scopes": {
+				"https://ga.jspm.io/": {
+					"dawn-js-core": "https://ga.jspm.io/npm:dawn-js-core@0.1.1/index.js"
 				}
 			}
-			</script>
+		}
+		</script>
 			
 			<!-- ES Module Shims: Import maps polyfill for modules browsers without import maps support (all except Chrome 89+) -->
 			<script async src="https://ga.jspm.io/npm:es-module-shims@1.5.1/dist/es-module-shims.js" crossorigin="anonymous"></script>
